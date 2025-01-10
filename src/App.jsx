@@ -25,6 +25,12 @@ const App = () => {
   }
 
   const submitHandler = (e) => {
+
+    if(taskInput.current.value === '' || dueDateInput.current.value === ''){
+      alert('Please fill all the fields')
+      return
+    }
+
     let task = taskInput.current.value
     console.log(task)
     let dueDate = new Date(dueDateInput.current.value).toLocaleDateString('en-US', options)
