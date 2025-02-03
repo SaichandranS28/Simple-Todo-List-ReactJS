@@ -11,7 +11,7 @@ function TodoCard({key, title, dueDate, id, deleteTask}) {
     return(
         <>
             <div className="w-full flex justify-center mt-15">
-                <div className="w-[450px] py-3">
+                <div className="w-[450px] py-3 px-3">
                     <div className="flex justify-between items-center border rounded-2xl py-3 px-5 shadow">
                         <div className="">
                             <h1 className="text-lg text-blue-700 cursor-pointer">{title}</h1>
